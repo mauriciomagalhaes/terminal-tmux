@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-TRACEROUTEIP='177.85.70.242'
+TRACEROUTEIP=''
 
 SESSION=${SESSION:='Ipbx'}
 
