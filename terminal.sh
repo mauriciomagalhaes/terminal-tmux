@@ -32,7 +32,7 @@ then
 
         #
         tmux select-pane -t 0
-        tmux send-key "mtr <IP>" C-m
+        tmux send-key "mtr $TRACEROUTEIP" C-m
         #
         tmux select-pane -t 1
         tmux send-key "watch -n 1 -t 'rasterisk -x "'"sip show channels"'" | grep ACK'" C-m
