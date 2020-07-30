@@ -48,6 +48,7 @@ then
         tmux select-pane -t 4
         tmux send-key "watch -n 1 'rasterisk -x "'"core show channels concise"'"'" C-m
         #tmux send-key "watch -n 1 'rasterisk -x "'"core show channels concise"'" | grep -v sms'" C-m
+        #"watch -n 1 -t \"rasterisk -x 'sip show peers' | sed -n '/177/{p;q;}'| awk '{print \\$"1",\\$"2",\\$"6",\\$"7",\\$"8"}'\"" C-m
 
         tmux new-window -t $SESSION:1 -n 'Shell'
         tmux select-window -p
