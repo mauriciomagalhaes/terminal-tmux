@@ -2,7 +2,9 @@
 #
 TRACEROUTEIP=''
 
-SESSION=${SESSION:='Ipbx'}
+EMPRESA='' 
+
+SESSION=${SESSION:="IPBX-$EMPRESA"}
 
 SESSIONEXISTS=$(tmux list-sessions | grep $SESSION)
 
