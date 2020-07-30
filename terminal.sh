@@ -54,7 +54,7 @@ then
         tmux new-window -t $SESSION:1 -n 'Shell'
         tmux select-window -p
         tmux select-pane -t 0
-        tmux attach
+        tmux attach-session -t $SESSION:0
 fi
 
 tmux attach-session -t $SESSION
