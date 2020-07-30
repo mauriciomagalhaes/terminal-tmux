@@ -55,5 +55,6 @@ then
 fi
 #
 tmux attach-session -t $SESSION
+tmux select-window -t 0
 tmux select-pane -t 0
 
